@@ -1,0 +1,226 @@
+
+html, body{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'RocknRoll One', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/* NAVBAR */
+nav{
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: rgba(0, 0, 0,0.2);
+
+}
+strong{
+    letter-spacing: 4px;
+}
+
+
+.mother{
+    background-image: url('../images/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+
+
+}
+
+/* Jumbotron */
+.cgb{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+/* button */
+.btn-orange{
+    background-color: #DA291C !important;
+    color: white !important;
+}
+
+.user-a{
+    position: relative;
+}
+.user-b{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.user-c{
+    position: absolute;
+    left: 10px;
+    top: 9px;
+}
+.user-d{
+    color: black !important;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"]{
+    padding-left: 40px !important;
+}
+textarea{
+    padding-left: 30px !important;
+}
+
+.text-orange{
+    color: #DA291C !important;
+}
+
+.btn-wide{
+    width: 215px !important;
+}
+
+
+/* MAIN ONE */
+.img-1{
+    position: relative;
+}
+
+/* .img-b{
+    position: absolute;
+    left: 160px;
+    top: 15px;
+} */
+
+
+
+/* MAIN TWO */
+.bg-grey{
+    background-color: #f6f6f6;
+}
+
+/* MAIN 3 */
+.bg-main3{
+
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/lukas-blazek-f-TWhXOrLiU-unsplash\ \(1\).png');
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.curly-hair{
+    border: 5px solid white;
+}
+
+.r-quote{
+    padding-top: 170px;
+}
+
+/* MAIN 4 */
+.main4{
+    margin-top: 110px;
+}
+
+.bolder-text{
+    font-weight: 900 !important;
+}
+.bg-facebook{
+    background-color: #4267B2;
+    /* width: 40px !important; */
+    /* height: 30px !important; */
+}
+.bg-twitter{
+    background-color: #1DA1F2;
+        /* width: 30px !important;
+    height: 30px !important; */
+}
+.bg-insta{
+    background-color: #C1008A;
+        /* width: 30px !important;
+    height: 30px !important; */
+}
+.bg-pin{
+    background-color: #BD081B;
+        /* width: 30px !important;
+    height: 30px !important; */
+}
+
+
+/* MAIN 5 */
+.bg-main5b{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/601148-PMYU1A-766.png');
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 550px; */
+    margin-top: -90px;
+}
+
+.helen{
+    border: 1px solid white;
+    margin-top: 80px;
+    margin-left: 30px;
+    padding: 15px;
+    margin-bottom: 100px;
+    /* overflow-x: hidden; */
+}
+.helen2{
+    text-align: right !important;
+}
+
+
+/* MEDIA QUERY FOR TABLET */
+@media (max-width: 1440px) {
+    .img-b{
+    position: absolute;
+    left: 220px;
+    top: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    .img-b{
+    position: absolute;
+    left: 170px;
+    top: 15px;
+    }
+}
+@media (max-width: 991.98px) {
+    .img-b{
+    position: absolute;
+    left: 120px;
+    top: 15px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .img-b{
+    position: absolute;
+    left: 190px !important;
+    top: 15px;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 425px) */
+@media (max-width: 425px) { 
+    .img-b{
+    position: absolute;
+    left: 220px !important;
+    top: 15px;
+    }
+}
+/* Small devices (landscape phones, less than 375px) */
+@media (max-width: 375px) { 
+    .img-b{
+    position: absolute;
+    left: 190px !important;
+    top: 15px;
+    }
+}
+/* Small devices (landscape phones, less than 320px) */
+@media (max-width: 320px) { 
+    .img-b{
+    position: absolute;
+    left: 160px !important;
+    top: 15px;
+    }
+}

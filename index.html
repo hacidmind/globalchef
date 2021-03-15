@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global chef</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- SIGN IN Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Welcome Back!</h5>
+                    <img src="images/cancel-button.svg" alt="cancel" data-mdb-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <form class="px-3">
+                        <!-- Full Name input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="text" class="form-control" placeholder="Full Name" />
+                            <img src="images/black-male-user-symbol.svg" alt="user" class="user-b">
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="password" class="form-control" placeholder="Password" />
+                            <img src="images/lock.svg" alt="lock" class="user-b">
+                        </div>
+
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-orange btn-block">Sign in</button>
+                        <p class="my-3 text-center">Or</p>
+                        <button type="submit" class="btn btn-primary btn-block my-4">Continue with Facebook</button>
+                        <button type="submit" class="btn btn-orange btn-block mb-3">Continue with Google</button>
+                        <div class="col text-center">
+                            <!-- Simple link -->
+                            or <a href="#!">Forgot ?</a>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="m-auto my-3">Dont have an account <a href="#">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF SIGN IN MODAL -->
+
+    <!-- GET STARTED Modal -->
+    <div class="modal fade" id="getStartedModal" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel1">Sign up and start learning</h5>
+                    <img src="images/cancel-button.svg" alt="cancel" data-mdb-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <form class="px-3">
+                        <!-- Full Name input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="text" class="form-control" placeholder="Full Name" />
+                            <img src="images/black-male-user-symbol.svg" alt="user" class="user-b">
+                        </div>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="email" class="form-control" placeholder="Email" />
+                            <img src="images/envelope.svg" alt="user" class="user-b">
+                        </div>
+                        <!-- PhoneNumber input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="number" class="form-control" placeholder="Phone" />
+                            <img src="images/call-answer.svg" alt="user" class="user-b">
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4 user-a">
+                            <input type="password" class="form-control" placeholder="Password" />
+                            <img src="images/lock.svg" alt="lock" class="user-b">
+                        </div>
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" checked />
+                            <label class="form-check-label small mb-3"> Yes, I want to get the most out of GlobalChef by
+                                receiving emails with exclusive deals, personal recommendations and
+                                learning tips. </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-orange btn-block">Sign in</button>
+
+                        <p class="my-2 text-center small">By signing up, you agree to our Terms of Use and Privacy
+                            Policy</p>
+                        <p class="my-3 text-center">Or</p>
+                        <button type="submit" class="btn btn-primary btn-block my-4">Continue with Facebook</button>
+                        <button type="submit" class="btn btn-orange btn-block mb-3">Continue with Google</button>
+                        <div class="col text-center">
+                            <!-- Simple link -->
+                            or <a href="#!">Forgot ?</a>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="m-auto my-3">Already have an account? <a href="#">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF GET STARTED MODAL -->
+
+    <div class="mother">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/PNGIX.com_chef-png_490598.png" alt="logo"
+                        class="img-fluid" width="30"> <strong class="h3 mt-2"><span
+                            class="text-warning">Global</span><span class="text-danger">Chef</span></strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Classes</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact Us </a>
+                        </li>
+
+                    </ul>
+                    <form class="ms-auto">
+                        <button class="btn btn-outline-warning" type="button" data-mdb-toggle="modal"
+                            data-mdb-target="#signInModal">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- JUMBOTRON -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center cgb mb-5">
+                    <p class="text-warning">Cooking is fun! We will prove it to you</p>
+                    <h1 class="text-white h2">Get unlimited access to the <br> world of food</h1>
+                    <button class="btn btn-orange" type="button" data-mdb-toggle="modal"
+                        data-mdb-target="#getStartedModal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN ONE -->
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-12 text-center py-5">
+                <h1>Why choose Global chef?</h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/pizza.svg" alt="dish" class="img-fluid" width="70">
+                <h2 class="text-orange h5">Wide Variety of food</h2>
+                <p class="">Get free access to unlimited food tutorials and get to enjoy the beauty
+                    of cooking.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/XMLID_130_.svg" alt="dish" class="img-fluid" width="70">
+                <h2 class="text-orange h5">Seasoned</h2>
+                <p class="">Learn the tricks and tips from top chefs all over the world and impress your
+                    friends at home
+                </p>
+            </div>
+            <div class="col-md-4 text-center img-1">
+                <div class="img-">
+                    <img src="images/pizza(1).svg" alt="dish" class="img-fluid img-a" width="70">
+                    <img src="images/pizza.svg" alt="dish" class="img-fluid img-b" width="70">
+                </div>
+                <h2 class="text-orange h5">Meet and Share</h2>
+                <p class="">Access good job opportunities in our partner schools.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN TWO -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/davide-cantelli-jpkfc5_d-DI-unsplash.png" class="card-img-top" alt="image1" />
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div class="row">
+                            <div class="col-6 small">300 Students</div>
+                            <div class="col-6 small">1hr 40min</div>
+                        </div>
+                        <p class="card-text small">
+                            Serve your breakfast like a boss and have a diet on
+                        </p>
+                        <p class='text-small'>Chef Michael Akpan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/gelato.png" class="card-img-top" alt="image2" />
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div class="row">
+                            <div class="col-6 small">300 Students</div>
+                            <div class="col-6 small">1hr 40min</div>
+                        </div>
+                        <p class="card-text small">
+                            How to make Gelato: Tips and Recipes to make the Italian treat
+                        </p>
+                        <p class='small'>Chef Manchang Wuyeng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/plate-of-barbeques-on-dining-table-2689419-1.png" class="card-img-top"
+                        alt="image3" />
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div class="row">
+                            <div class="col-6 small">300 Students</div>
+                            <div class="col-6 small">1hr 40min</div>
+                        </div>
+                        <p class="card-text small">
+                            Master the art of grilling your barbeque like a chef
+                        </p>
+                        <p class='small'>Chef kola Ajisegiri</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/cooked-rice-with-fried-shrimp-in-bowl-near-glass-of-juice-3345727-1.png"
+                        class="card-img-top" alt="image4" />
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <div class="row">
+                            <div class="col-6 small">300 Students</div>
+                            <div class="col-6 small">1hr 40min</div>
+                            <p class="card-text small">
+                                Learn how to cook rice spiced with fried shrimps
+                            </p>
+                            <p class='small'>Chef Michael Akpan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-5">
+            <div class="btn btn-outline-danger">Explore all Classes</div>
+        </div>
+
+
+    </div>
+
+    <!-- MAIN THREE -->
+    <div class="bg-main3">
+        <!-- <img src="images/lukas-blazek-f-TWhXOrLiU-unsplash (1).png" class="img-fluid img-main3" alt=""> -->
+        <div class="container pt-5">
+            <div class="row py-5">
+                <div class="col-sm-2"><img src="images/quote(1).svg" alt="quote"></div>
+                <div class="col-sm-2"><img class="curly-hair img-fluid rounded-circle" src="images/circle-cropped.png"
+                        alt="image5"></div>
+                <div class="col-sm-6">
+                    <h2 class="text-warning">Thoughts About Our Work</h2>
+                    <p class="small text-white">I thought about the times in my life when I couldn't even
+                        afford $5 for a book. That's when it hit me. Wouldn't it be
+                        cool if the price tag said, '5 jumping jacks and a sit-up. Chris raised $70k to help
+                        his neighbor Norma stay in her
+                        home.</p>
+                    <p class="text-warning">Devil Roy Barman</p>
+                </div>
+                <div class="col-sm-2"><img src="images/quote.svg" alt="quote" class="r-quote"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN FOUR -->
+    <div class="container main4">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Our Tutors</h3>
+                <p>We provide world class chefs to take classes as well as guide learners on their <br>
+                    journey through the world of food. Our
+                    tutors are fully certified chefs.</p>
+                <!-- Set up your HTML -->
+                <div class="owl-carousel owl-theme owl text-center">
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/chef3.png" class="card-img-top" alt="chef3" width="305" height="203" />
+                            <div class="card-body">
+                                <p class="card-text"> <span class="bolder-text h5">
+                                        Birgit Schreiner
+                                    </span> <br>
+                                    China <br>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter bg-twitter rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-instagram bg-insta rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-pinterest bg-pin rounded-circle"></i>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/chef2.png" class="card-img-top" alt="chef2" width="305" height="203" />
+                            <div class="card-body">
+                                <p class="card-text"> <span class="bolder-text h5">
+                                        Birgit Schreiner
+                                    </span> <br>
+                                    China <br>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter bg-twitter rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-instagram bg-insta rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-pinterest bg-pin rounded-circle"></i>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/chef5.png" class="card-img-top" alt="chef5" width="305" height="203" />
+                            <div class="card-body">
+                                <p class="card-text"> <span class="bolder-text h5">
+                                        Birgit Schreiner
+                                    </span> <br>
+                                    China <br>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter bg-twitter rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-instagram bg-insta rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-pinterest bg-pin rounded-circle"></i>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/chef1.png" class="card-img-top" alt="image1" width="305" height="203" />
+                            <div class="card-body">
+                                <p class="card-text"> <span class="bolder-text h5">
+                                        Birgit Schreiner
+                                    </span> <br>
+                                    China <br>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter bg-twitter rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-instagram bg-insta rounded-circle"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-pinterest bg-pin rounded-circle"></i>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN FIVE -->
+    <div class="main5 bg-grey">
+        <div class="container my-5">
+            <div class="row pt-5">
+                <div class="col-md-5">
+                    <small>Get in Touch</small>
+                    <h2>Contact Us</h2>
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline user-a">
+                                    <input type="number" class="form-control" placeholder="Email" />
+                                    <img src="images/call-answer.svg" alt="user" class="user-b">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline user-a">
+                                    <input type="email" class="form-control" placeholder="Email" />
+                                    <img src="images/envelope.svg" alt="user" class="user-b">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline  user-a">
+                                    <input type="text" class="form-control" placeholder="Full Name" />
+                                    <img src="images/black-male-user-symbol.svg" alt="user" class="user-d">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline  user-a">
+                                    <input type="text" class="form-control" placeholder="Topic" />
+                                    <!-- <img src="images/black-male-user-symbol.svg" alt="user" class="user-b"> -->
+                                    <i class="fas fa-tag user-c   "></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="mb-3 user-a">
+                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            <!-- <img src="images/black-male-user-symbol.svg" alt="user" class="user-b"> -->
+                            <i class="fas fa-comment user-c  "></i>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-wide btn-orange mb-4">Sign up</button>
+
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="bg-main5b">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="helen text-white">
+                                    <h3>Cooking is an art. Learn, gather and create the masterpiece</h3>
+                                    <p class="text-right pt-5 helen2">Helen Kell</p>
+                                </div>
+                            </div>
+                            <div class="col-6"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="bg-dark">
+        <div class="footer py-5">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <h3 class="mt-2"><span class="text-warning">Global</span><span class="text-danger">Chef</span>
+                        </h3>
+                        <p class="small text-white">
+                            Core values are the fundamental beliefs of a person or organization. The core values are the
+                            guiding principles that
+                            dictate the services we provide to our partners and students. Global chef provides the best
+                            information about food.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-floating mx-1 bg-white text-dark">
+                            <i class="fab fa-facebook-f "></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-floating mx-1 bg-white text-dark">
+                            <i class="fab fa-google-plus-g rounded-circle   "></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-floating mx-1 bg-white text-dark">
+                            <i class="fab fa-twitter  rounded-circle"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-floating mx-1 bg-white text-dark">
+                            <i class="fab fa-linkedin-in  rounded-circle"></i>
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-white mt-2">Contact Us</h5>
+                        <p class="small text-white"><i class="fas fa-map-marker-alt text-orange pr-3"></i> No 12, Fola
+                            Jinadu Street, Gbagada , Lagos</p>
+                        <p class="small text-white"><i class="fas fa-phone text-orange  pr-3  "></i>Support:
+                            +2348089143428</p>
+                        <p class="small text-white"><i class="far fa-envelope-open text-orange pr-3"></i>Email:
+                            info@globalchef.com.ng</p>
+                        <!-- Search form -->
+                        <form class="d-flex input-group w-auto">
+                            <input type="search" class="form-control bg-dark text-white" placeholder="Email Address"
+                                aria-label="Search" />
+                            <button class="btn btn-white text-dark" type="button" data-mdb-ripple-color="dark">
+                                Submit
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="col-md-4 text-white mt-2">
+                        <h5>Home</h5>
+                        <h5>About Us</h5>
+                        <h5>Classes</h5>
+                    </div>
+                </div>
+                <div class="row border-top">
+                    <div class="col-md-6 small text-white mt-5">
+                        Copyrights © 2019 GlobalChef Studio. All rights reserved.
+                    </div>
+                    <div class="col-md-6 small text-white mt-5">
+                        <p class=""><span class="pe-3">Privacy Policy</span> <span>Terms of Use</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplaySpeed: 400,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                648: {
+                    items: 3
+                },
+                768: {
+                    items: 3
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
